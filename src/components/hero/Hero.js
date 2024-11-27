@@ -20,7 +20,7 @@ const hero = () => {
         loop: 100,
         typeSpeed: 150,
         deleteSpeed: 50,
-        delaySpeed: 500
+        delaySpeed: 600
     })
 
     return (
