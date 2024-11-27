@@ -6,7 +6,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useTypewriter } from 'react-simple-typewriter'
 
-const hero = () => {
+const Hero = () => {
     // For AOS Animation
     useEffect(() => {
         AOS.init({
@@ -40,4 +40,4 @@ const hero = () => {
     )
 }
 
-export default hero
+export default Hero
