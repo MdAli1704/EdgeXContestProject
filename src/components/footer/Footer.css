@@ -1,0 +1,49 @@
+.footer {
+    color: white;
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer {
+    line-height: 25px;
+}
+
+.footerOne {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerOne div {
+    cursor: pointer;
+}
+
+.footerOne-linkedin:hover {
+    color: #0072b1;
+}
+
+.footerOne-github:hover {
+    color: #F4CBB2;
+}
+
+.footerOne-instagram:hover {
+    color: #E1306C;
+}
+
+.footerTwo {
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footerTwo p {
+    text-align-last: center;
+    font-size: 14px;
+}
+
+@media(max-width: 576px) {
+    .footerTwo p {
+        text-align-last: center;
+        font-size: 12px;
+    }
+}

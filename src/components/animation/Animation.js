@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
 import './Animation.css'
+import { useNavigate } from 'react-router-dom';
 import AzionLogo from '../../assets/azionLogo.jpg'
 import SourcifyLogo from '../../assets/sourcifyLogo.jpg'
 import Logo from '../../assets/logo1.png'

@@ -19,6 +19,11 @@ const Navbar = () => {
     // Calculate the total quantity of items in the cart
     const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
+    // Scroll to the top when a specific link is clicked
+    const handleScrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <>
             <div className='navbar'>
@@ -27,14 +32,14 @@ const Navbar = () => {
                 </div>
 
                 <div className='navbarRight'>
-                    <div className='navbarRight-one'>
-                        <Link to='/home' className='navbarRight-link'><p>Home</p></Link>
-                        <Link to='/shop' className='navbarRight-link'><p>Shop</p></Link>
-                        <Link to='/courses' className='navbarRight-link'><p>Courses</p></Link>
+                    <div className='navbarRight-one' >
+                        <Link to='/home' className='navbarRight-link' onClick={handleScrollToTop}><p>Home</p></Link>
+                        <Link to='/shop' className='navbarRight-link' onClick={handleScrollToTop}><p>Shop</p></Link>
+                        <Link to='/courses' className='navbarRight-link' onClick={handleScrollToTop}><p>Courses</p></Link>
                     </div>
                     <div className='navbarRight-two'>
                         <div>
-                            <Link to='/cart' className='navbarRight-link'>
+                            <Link to='/cart' className='navbarRight-link'  onClick={handleScrollToTop}>
                                 <p className='cart'  >
                                     <BiCart className="cart-icon" />
                                 </p>
